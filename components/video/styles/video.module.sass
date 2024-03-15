@@ -1,0 +1,173 @@
+.video-wrapper
+	border-style: solid
+	border-width: 2px
+	// border-image: linear-gradient(118deg, #36a58a 0%, #0376b8 100%)
+	border: 2px solid #36a58a
+	border-radius: 8px
+	position: relative
+	margin-bottom: 20px
+	display: block
+	.img-wrapper
+		position: relative
+	.play-icon
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translateX(-50%) translateY(-50%)
+		width: 55px
+		cursor: pointer
+	.title
+		color: #ffffff
+		font-size: 0.85rem
+		padding: 5px 20px
+		min-height: 65px
+		line-height: 20px
+		background: rgb(120,202,147)
+		background: radial-gradient(circle, rgba(120,202,147,1) 0%, rgba(2,117,184,1) 95%)
+		position: relative
+		.inside
+			position: absolute
+			width: 90%
+			top: 50%
+			left: 50%
+			transform: translateX(-50%) translateY(-50%)
+.search-bar
+	width: calc( 100% - 20px )
+	background-color: white
+	display: flex
+	align-inems: center
+	margin: 20px auto
+	padding: 10px 20px
+	position: relative
+	border-radius: 10px
+
+	.select-out
+		display: flex
+		align-inems: center
+		background-color: rgba(53, 164, 140)
+		padding: 5px 10px
+		border-radius: 5px
+		margin-right: 10px
+
+		.select-desc
+			padding: 5px 10px
+			margin-right: 10px
+			color: white
+			font-weight: 700
+			text-align: left
+
+		.select-category
+			padding: 5px 10px
+			border-radius: 5px
+			border: none
+			appearance: none
+			-moz-appearance: none
+			-webkit-appearance: none
+			text-align: center
+			color: white
+			margin: 0px auto
+			cursor: pointer
+			font-size: 0.9rem
+			&:hover
+				background-color: rgba(255, 255, 255, 0.15)
+
+		.category-active
+			background-color: white
+			color: rgba(53, 164, 140)
+			&:hover
+				background-color: white
+				cursor: default
+
+	.search-input
+		border: none
+		height: 100%
+		font-size: 1.1rem
+		// width: calc( 100% - 260px )
+		flex-shrink: 0
+		position: relative
+		background-color: rgba(0, 0, 0, 0.1)
+		border-radius: 5px
+		padding-left: 10px
+
+	.search-btn
+		border: none
+		background-color: rgba(0, 0, 0, 0)
+		height: calc( 100% - 20px )
+		// width: 40px
+		position: absolute
+		right: 10px
+		background-color: lightgray
+		padding: 0px 30px
+		border-radius: 0px 5px 5px 0px
+
+.search-area-mobile
+	display: none
+
+.alignicon
+	display: none !important
+	padding: 10px
+
+
+@media (max-width: 992px)
+	.search-area-mobile
+		display: block
+		position: relative
+		input[type=text]
+			box-shadow: 0 0 7px rgba(0,0,0,0.15)
+			background: #fff
+			width: 100%
+			border-radius: 10px
+			font-size: 1.1rem
+		.btn-search
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			right: 10px
+			border: none
+			background: none
+	.search-bar
+		display: block
+	.search-input
+		width: -webkit-fill-available
+		height: auto !important
+		padding: 0.85rem
+	.search-btn
+		padding-top: 0.85rem
+		padding-bottom: 0.85rem
+		height: auto !important
+		right: 1.25rem !important
+		padding-top: 0.85rem !important
+		padding-bottom: 0.85rem !important
+	.floatleft
+		float: left
+	.floatright
+		float: right
+	.paddingleft05
+		padding-left: 5px
+		padding-right: 0px
+	.paddingright05
+		padding-right: 5px
+		padding-left: 0px
+	.width095
+		width: 95%
+	.width001
+		width: 1% !important
+	.right0
+		right: 0
+	.zindex2
+		z-index: 2
+	.alignicon
+		display: block !important
+		padding: 10px
+	.col-md-55
+		width: 47.3333%
+
+@media (max-width: 768px)
+	.col-sm-55
+		width: 47.3333%
+
+@media screen and (max-width: 576px)
+	.col-55
+		width: 47.3333%
+	.alignicon
+		padding: 10px 5px

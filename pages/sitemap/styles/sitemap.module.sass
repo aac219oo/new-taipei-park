@@ -1,0 +1,35 @@
+.paragraph
+	margin-top: 25px
+	line-height: 27px
+	font-size: 0.95rem
+	padding-bottom: 35px
+	border-bottom: 1px dotted #cccccc
+	font-weight: 800
+
+.wrapper
+	background: #ffffff
+	box-shadow: 3px 3px 8px rgba(0,0,0,0.2)
+	border-radius: 30px
+	padding: 25px 10px
+	display: block
+	&:hover
+		background: #f2f2f2
+		transition: 0.5s
+		color: #000000
+	img
+		max-width: 45px
+	.title
+		font-size: 1.4rem
+		font-weight: 900
+		margin-top: 10px
+		border-bottom: 1px dotted #cccccc
+		padding-bottom: 15px
+	.sub
+		padding-top: 15px
+		font-size: 0.85rem
+		height: 50px
+
+@media (max-width: 992px)
+	.wrapper
+		max-width: 75%
+		margin: auto
